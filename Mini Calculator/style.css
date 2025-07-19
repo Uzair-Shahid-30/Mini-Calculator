@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8A8E91;
+}
+
+.container {
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background: #333;
+    padding: 40px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset -5px -5px 15px rgba(0,0,0,0.5),
+    inset 5px 5px 15px rgba(0,0,0,0.5);
+    display: inline-block;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.all-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 384px;
+    margin: 0 auto;
+}
+
+.container #calscreen {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: calc(100% - 20px);
+    left: 5px;
+    border: none;
+    outline: none;
+    background: #a7af7c;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.75);
+    padding: 10px;
+    font-size: 2em;
+}
+
+.calculator .all-btns input[type = "button"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow:
+        inset -8px 8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.15),
+        0 0 0 2px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    user-select: none;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.container input[type ="button"].equal {
+    background: #f00;
+    border: 1px solid #f00;
+    width: 175px;
+}
+
+.container input[type ="button"].clearbtn {
+    background: #43AA8B;
+    border: 1px solid #43AA8B;
+}
